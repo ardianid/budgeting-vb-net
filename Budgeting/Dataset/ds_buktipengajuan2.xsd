@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_buktipengajuan2" targetNamespace="http://tempuri.org/ds_buktipengajuan2.xsd" xmlns:mstns="http://tempuri.org/ds_buktipengajuan2.xsd" xmlns="http://tempuri.org/ds_buktipengajuan2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_buktipengajuan2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_buktipengajuan2" msprop:Generator_UserDSName="ds_buktipengajuan2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="noid" msprop:Generator_ColumnVarNameInTable="columnnoid" msprop:Generator_ColumnPropNameInRow="noid" msprop:Generator_ColumnPropNameInTable="noidColumn" msprop:Generator_UserColumnName="noid" type="xs:string" minOccurs="0" />
+              <xs:element name="akun_opex_bp" msprop:Generator_ColumnVarNameInTable="columnakun_opex_bp" msprop:Generator_ColumnPropNameInRow="akun_opex_bp" msprop:Generator_ColumnPropNameInTable="akun_opex_bpColumn" msprop:Generator_UserColumnName="akun_opex_bp" type="xs:string" minOccurs="0" />
+              <xs:element name="detail_aktifitas" msprop:Generator_ColumnVarNameInTable="columndetail_aktifitas" msprop:Generator_ColumnPropNameInRow="detail_aktifitas" msprop:Generator_ColumnPropNameInTable="detail_aktifitasColumn" msprop:Generator_UserColumnName="detail_aktifitas" type="xs:string" minOccurs="0" />
+              <xs:element name="jml_real" msprop:Generator_ColumnVarNameInTable="columnjml_real" msprop:Generator_ColumnPropNameInRow="jml_real" msprop:Generator_ColumnPropNameInTable="jml_realColumn" msprop:Generator_UserColumnName="jml_real" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

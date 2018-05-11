@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_buktipengajuan" targetNamespace="http://tempuri.org/ds_buktipengajuan.xsd" xmlns:mstns="http://tempuri.org/ds_buktipengajuan.xsd" xmlns="http://tempuri.org/ds_buktipengajuan.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_buktipengajuan" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_buktipengajuan" msprop:Generator_UserDSName="ds_buktipengajuan">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nobukti" msprop:Generator_ColumnVarNameInTable="columnnobukti" msprop:Generator_ColumnPropNameInRow="nobukti" msprop:Generator_ColumnPropNameInTable="nobuktiColumn" msprop:Generator_UserColumnName="nobukti" type="xs:string" minOccurs="0" />
+              <xs:element name="tanggal" msprop:Generator_ColumnVarNameInTable="columntanggal" msprop:Generator_ColumnPropNameInRow="tanggal" msprop:Generator_ColumnPropNameInTable="tanggalColumn" msprop:Generator_UserColumnName="tanggal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nama_bu" msprop:Generator_ColumnVarNameInTable="columnnama_bu" msprop:Generator_ColumnPropNameInRow="nama_bu" msprop:Generator_ColumnPropNameInTable="nama_buColumn" msprop:Generator_UserColumnName="nama_bu" type="xs:string" minOccurs="0" />
+              <xs:element name="alamat_bu" msprop:Generator_ColumnVarNameInTable="columnalamat_bu" msprop:Generator_ColumnPropNameInRow="alamat_bu" msprop:Generator_ColumnPropNameInTable="alamat_buColumn" msprop:Generator_UserColumnName="alamat_bu" type="xs:string" minOccurs="0" />
+              <xs:element name="telp_bu" msprop:Generator_ColumnVarNameInTable="columntelp_bu" msprop:Generator_ColumnPropNameInRow="telp_bu" msprop:Generator_ColumnPropNameInTable="telp_buColumn" msprop:Generator_UserColumnName="telp_bu" type="xs:string" minOccurs="0" />
+              <xs:element name="nama_divisi" msprop:Generator_ColumnVarNameInTable="columnnama_divisi" msprop:Generator_ColumnPropNameInRow="nama_divisi" msprop:Generator_ColumnPropNameInTable="nama_divisiColumn" msprop:Generator_UserColumnName="nama_divisi" type="xs:string" minOccurs="0" />
+              <xs:element name="nama_departemen" msprop:Generator_ColumnVarNameInTable="columnnama_departemen" msprop:Generator_ColumnPropNameInRow="nama_departemen" msprop:Generator_ColumnPropNameInTable="nama_departemenColumn" msprop:Generator_UserColumnName="nama_departemen" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="jml_kas" msprop:Generator_ColumnVarNameInTable="columnjml_kas" msprop:Generator_ColumnPropNameInRow="jml_kas" msprop:Generator_ColumnPropNameInTable="jml_kasColumn" msprop:Generator_UserColumnName="jml_kas" type="xs:decimal" minOccurs="0" />
+              <xs:element name="nama_orderan" msprop:Generator_ColumnVarNameInTable="columnnama_orderan" msprop:Generator_ColumnPropNameInRow="nama_orderan" msprop:Generator_ColumnPropNameInTable="nama_orderanColumn" msprop:Generator_UserColumnName="nama_orderan" type="xs:string" minOccurs="0" />
+              <xs:element name="catatan" msprop:Generator_ColumnVarNameInTable="columncatatan" msprop:Generator_ColumnPropNameInRow="catatan" msprop:Generator_ColumnPropNameInTable="catatanColumn" msprop:Generator_UserColumnName="catatan" type="xs:string" minOccurs="0" />
+              <xs:element name="jenis_bu" msprop:Generator_ColumnVarNameInTable="columnjenis_bu" msprop:Generator_ColumnPropNameInRow="jenis_bu" msprop:Generator_ColumnPropNameInTable="jenis_buColumn" msprop:Generator_UserColumnName="jenis_bu" type="xs:string" minOccurs="0" />
+              <xs:element name="spesifikasi" msprop:Generator_ColumnVarNameInTable="columnspesifikasi" msprop:Generator_ColumnPropNameInRow="spesifikasi" msprop:Generator_ColumnPropNameInTable="spesifikasiColumn" msprop:Generator_UserColumnName="spesifikasi" type="xs:string" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" minOccurs="0" />
+              <xs:element name="satuan" msprop:Generator_ColumnVarNameInTable="columnsatuan" msprop:Generator_ColumnPropNameInRow="satuan" msprop:Generator_ColumnPropNameInTable="satuanColumn" msprop:Generator_UserColumnName="satuan" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

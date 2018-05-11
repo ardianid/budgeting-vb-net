@@ -1,0 +1,27 @@
+1. upload opex kalo cancel kog error ? (ga masalah disini)
+2. kode opex harus ada, diformat impor paling belakang (ok)
+3. pembatalan balik opex detail
+4. noid rubah jadi varchar(20) (ok)
+5. yang nambah atau ngurang akun belom
+
+ke 2
+
+1. difilter dvisi yang boleh dia input per user (ok)
+2. difilter juga yang cuma dia input (ok)
+3. cross budget otorisasi (ok)
+4. sisa budget di opex (ok)
+5. opex extrak ke excel (ok)
+6. laporan ditambahin dari opex yang mana (ok)
+7. tampilin kode opex (ok)
+
+KE 3
+
+1. verifikasi hanya waktu pertama x simpan dan complete (kalau lebih tinggi) (ok)
+2. verifikasi bertingkat (ok)
+
+ke 4
+1. tambahin nama barang,qty dan satuan di pengajuan (ok)
+
+ke 5
+1. cetakan ke 2 header gausah (ok)
+2. kolom tanda tangan dilaporan dibuat table (ok)

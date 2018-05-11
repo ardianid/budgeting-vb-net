@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E6C3072-1556-4742-8EB0-CD739C40040A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Budgeting.My.MyApplication</StartupObject>
+    <RootNamespace>Budgeting</RootNamespace>
+    <AssemblyName>Budgeting</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Budgeting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Budgeting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1484842429_icons-06.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Budgeting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Budgeting.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Class\Clsmy.vb" />
+    <Compile Include="Class\Mdlmy.vb" />
+    <Compile Include="Dataset\ds_buktipengajuan.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_buktipengajuan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_buktipengajuan2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_buktipengajuan2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_buktipengajuan2.vb">
+      <DependentUpon>ds_buktipengajuan2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fakun.Designer.vb">
+      <DependentUpon>fakun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fakun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fakun2.Designer.vb">
+      <DependentUpon>fakun2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fakun2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fbu.Designer.vb">
+      <DependentUpon>fbu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fbu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fbu2.Designer.vb">
+      <DependentUpon>fbu2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fbu2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fbudget_akun.Designer.vb">
+      <DependentUpon>fbudget_akun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fbudget_akun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fbudget_akun2.Designer.vb">
+      <DependentUpon>fbudget_akun2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fbudget_akun2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fcustom_filter.Designer.vb">
+      <DependentUpon>fcustom_filter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fcustom_filter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fdepart_divisi.Designer.vb">
+      <DependentUpon>fdepart_divisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fdepart_divisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fdepart_divisi2.Designer.vb">
+      <DependentUpon>fdepart_divisi2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fdepart_divisi2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fdepart_divisi3.Designer.vb">
+      <DependentUpon>fdepart_divisi3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fdepart_divisi3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\flock_cross.Designer.vb">
+      <DependentUpon>flock_cross.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\flock_cross.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fpengajuan.Designer.vb">
+      <DependentUpon>fpengajuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fpengajuan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fpengajuan2.Designer.vb">
+      <DependentUpon>fpengajuan2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fpengajuan2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fpengajuan3.Designer.vb">
+      <DependentUpon>fpengajuan3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fpengajuan3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frubah_pwd.designer.vb">
+      <DependentUpon>frubah_pwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frubah_pwd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fsettdbase.designer.vb">
+      <DependentUpon>fsettdbase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fsettdbase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fuser.designer.vb">
+      <DependentUpon>fuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fuser2.designer.vb">
+      <DependentUpon>fuser2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fuser2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fverif_cross.Designer.vb">
+      <DependentUpon>fverif_cross.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fverif_cross.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\login.designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\waitf.designer.vb">
+      <DependentUpon>waitf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\waitf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\futama1.Designer.vb">
+      <DependentUpon>futama1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\futama1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Preview\fpr_bukti_pengajuan.Designer.vb">
+      <DependentUpon>fpr_bukti_pengajuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\fpr_bukti_pengajuan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\r_bukti_pengajuan.Designer.vb">
+      <DependentUpon>r_bukti_pengajuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\r_bukti_pengajuan.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_bukti_pengajuan2.Designer.vb">
+      <DependentUpon>r_bukti_pengajuan2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\r_bukti_pengajuan2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_bukti_pengajuan_rev.Designer.vb">
+      <DependentUpon>r_bukti_pengajuan_rev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\r_bukti_pengajuan_rev.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_pengajuan3.Designer.vb">
+      <DependentUpon>r_pengajuan3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\r_pengajuan3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\fakun.resx">
+      <DependentUpon>fakun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fakun2.resx">
+      <DependentUpon>fakun2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fbu.resx">
+      <DependentUpon>fbu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fbu2.resx">
+      <DependentUpon>fbu2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fbudget_akun.resx">
+      <DependentUpon>fbudget_akun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fbudget_akun2.resx">
+      <DependentUpon>fbudget_akun2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fcustom_filter.resx">
+      <DependentUpon>fcustom_filter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fdepart_divisi.resx">
+      <DependentUpon>fdepart_divisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fdepart_divisi2.resx">
+      <DependentUpon>fdepart_divisi2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fdepart_divisi3.resx">
+      <DependentUpon>fdepart_divisi3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\flock_cross.resx">
+      <DependentUpon>flock_cross.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fpengajuan.resx">
+      <DependentUpon>fpengajuan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fpengajuan2.resx">
+      <DependentUpon>fpengajuan2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fpengajuan3.resx">
+      <DependentUpon>fpengajuan3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frubah_pwd.resx">
+      <DependentUpon>frubah_pwd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fsettdbase.resx">
+      <DependentUpon>fsettdbase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fuser.resx">
+      <DependentUpon>fuser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fuser2.resx">
+      <DependentUpon>fuser2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fverif_cross.resx">
+      <DependentUpon>fverif_cross.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\waitf.resx">
+      <DependentUpon>waitf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\futama1.resx">
+      <DependentUpon>futama1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\fpr_bukti_pengajuan.resx">
+      <DependentUpon>fpr_bukti_pengajuan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_bukti_pengajuan.resx">
+      <DependentUpon>r_bukti_pengajuan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_bukti_pengajuan2.resx">
+      <DependentUpon>r_bukti_pengajuan2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_bukti_pengajuan_rev.resx">
+      <DependentUpon>r_bukti_pengajuan_rev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_pengajuan3.resx">
+      <DependentUpon>r_pengajuan3.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dataset\ds_buktipengajuan.xsc">
+      <DependentUpon>ds_buktipengajuan.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_buktipengajuan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_buktipengajuan.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_buktipengajuan.xss">
+      <DependentUpon>ds_buktipengajuan.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_buktipengajuan2.xsc">
+      <DependentUpon>ds_buktipengajuan2.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_buktipengajuan2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_buktipengajuan2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_buktipengajuan2.xss">
+      <DependentUpon>ds_buktipengajuan2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1484842429_icons-06.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
