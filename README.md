@@ -1,6 +1,5 @@
 # budgeting-vb-net
 
-program ini dibuat untuk memenuhi kebutuhan dari group perusahaan saya saat  ini,
 menggunakan bahasa pemrograman vb.net dan sql server untuk databasenya
 
 program ini digunakan agar perusahaan tidak over budget/melebihi dari anggran yang sudah disetujui,
