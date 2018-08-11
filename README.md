@@ -3,8 +3,8 @@
 program ini dibuat untuk memenuhi kebutuhan dari group perusahaan saya saat  ini,
 menggunakan bahasa pemrograman vb.net dan sql server untuk databasenya
 
-program ini digunakan agar perusahaan over budget/melebihi dari anggran yang sudah disetujui,
-mengontrol arus kas dan mengetahui kemana saja budget digunakan
+program ini digunakan agar perusahaan tidak over budget/melebihi dari anggran yang sudah disetujui,
+mengontrol arus kas dan mengetahui kemana saja budget digunakan sebagai acuan penyusunan anggaran untuk masing - masing bagian di tahun setelahnya
 
 kontrol pengeluaran budget dan program ini dipegang oleh supervisor budgeting, dan pengajuan dilakukan oleh masing - masing bagian
 
