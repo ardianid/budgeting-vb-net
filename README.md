@@ -10,3 +10,5 @@ kontrol pengeluaran budget dan program ini dipegang oleh supervisor budgeting, d
 
 didalam program ini disediakan fasilitas, cross pos budget artinya user bisa mengajukan anggaran dari pos lain apabila diperlukan,
 tapi tetap memerlukan verifikasi dari supervisor agar disetujui
+
+team pembuatan program : 1 orang
